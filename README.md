@@ -5,7 +5,7 @@
 A web application that detects **gold-colored regions** in uploaded images using **Flask** and **OpenCV**.  
 This tool highlights gold areas for visualization and can be extended for further analysis.
 
-&nbsp;
+
 
 ## 📁 Project Structure
 ```
@@ -24,8 +24,6 @@ flask-gold-detector/
 └── README.md
 
 ````
-
-&nbsp;
 
 ## ⚙️ Setup Instructions
 
@@ -86,7 +84,7 @@ Upload an image, and the system will highlight **gold areas** automatically.
 
 ## 📸 Example
 
-![Gold Detection Example](assets/example.png)
+![Gold Detection Example](example.png)
 
  
 
@@ -109,17 +107,8 @@ If you have any questions or suggestions, feel free to reach out via **GitHub Is
 
  
 
-## ✅ Notes for GitHub Users
-
-* Save this file as `README.md`.
-* Replace `your-username` with your **GitHub username or organization**.
-* Add your own **example image** in an `assets/` folder and update the path in the Example section.
-
- 
-
 ## 📦 Requirements
 
-Save the following as **`requirements.txt`**:
 
 ```txt
 Flask==2.3.3
@@ -128,7 +117,3 @@ opencv-python==4.8.0.76
 numpy==1.24.4
 ```
 
-```
-
-Would you like me to now **bundle this into a real `.md` file** and give it as a downloadable file so you can drop it directly into your project?
-```
