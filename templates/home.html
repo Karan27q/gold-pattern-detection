@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Gold Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fffbe6 0%, #ffe082 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(191,161,74,0.13);
+            padding: 36px 44px 44px 44px;
+            border: 2px solid #ffe082;
+        }
+        h1 {
+            text-align: center;
+            color: #bfa14a;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+        .intro {
+            font-size: 1.13rem;
+            color: #444;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .how-to {
+            background: #fffde4;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+            border: 1.5px solid #ffe082;
+        }
+        .how-to h2 {
+            color: #ffb300;
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+        }
+        .how-to ol {
+            margin: 0 0 0 18px;
+            padding: 0;
+            color: #555;
+        }
+        .get-started-btn {
+            display: block;
+            margin: 0 auto;
+            background: linear-gradient(90deg, #ffb300 0%, #ffd54f 100%);
+            color: #fff;
+            border: none;
+            padding: 14px 36px;
+            border-radius: 8px;
+            font-size: 1.08rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(255,193,7,0.13);
+            transition: background 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            text-align: center;
+        }
+        .get-started-btn:hover {
+            background: linear-gradient(90deg, #ffd54f 0%, #ffb300 100%);
+            box-shadow: 0 4px 16px rgba(255,193,7,0.18);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Gold Detector</h1>
+        <div class="intro">
+            This web application helps you detect gold regions in your images using advanced image processing techniques.
+        </div>
+        <div class="how-to">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Click "Get Started" below to go to the detection page.</li>
+                <li>Upload a photo containing gold objects or regions.</li>
+                <li>Preview your image and submit it for analysis.</li>
+                <li>View the detected gold areas and download the result.</li>
+            </ol>
+        </div>
+        <a class="get-started-btn" href="{{ url_for('routes.index') }}">Get Started</a>
+    </div>
+</body>
+</html>
